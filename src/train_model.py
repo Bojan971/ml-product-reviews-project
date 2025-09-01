@@ -17,7 +17,6 @@ df['sentiment'] = df['sentiment'].astype(str).str.lower().str.strip()
 # Convert column type to 'category'
 df['sentiment'] = df['sentiment'].astype('category')
 
-
 # Drop columns that are not useful for modeling:
 df = df.drop(columns=['review_uuid', 'product_name', 'product_price'])
 
